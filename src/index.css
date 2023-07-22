@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+  background-color: rgb(46, 46, 46);
+}
+
+.bg-color {
+  background-color: rgb(46, 46, 46);
+}
+
+.bg-secondary {
+  background-color: rgb(76, 76, 76);
+}
+.bg-secondary:hover {
+  background-color: rgb(64, 64, 64);
+}
+.bg-fourth {
+  background-color: rgb(49, 48, 48);
+}
+.bg-tertiary {
+  background-color: rgb(75, 74, 74);
+}
+.bg-other {
+  background-color: rgb(31, 30, 30);
+}
+
+.primary-color {
+  color: #98dccd;
+}
+
+.btn {
+  background-color: #98dccd;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #7ea495;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #fff;
+}
+
+.btn-transparent:hover {
+  background-color: #7ea495;
+  border: 1px solid #7ea495;
+}
+
+.primary-bg {
+  background-color: #98dccd;
+}
+.section-p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+@layer base {
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+
+.img-banner {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
